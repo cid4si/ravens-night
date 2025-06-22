@@ -1,0 +1,94 @@
+/* Reseta os estilos padrão do navegador */
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #5076af; 
+    color: #FFFFFF; 
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    transition: all 0.3s ease;
+}
+
+/* Estilos do texto */
+h1 {
+    color: #702080;
+    font-size: 2.1em;
+    text-align: center;
+}
+
+h2 {
+    color: #3B3F54; 
+    font-size: 1.8em;
+    margin: 30px 0 15px 0;
+}
+
+p {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+/* Estilos do botão de toggle */
+
+.switch-btn {
+    margin: 50px auto;
+    background: #23273d; 
+    width: 200px;
+    height: 50px;
+    border-radius: 30px;
+    border: 3px solid #7A288A;
+    outline: none;
+    position: relative;
+    display: flex;
+    transition: all 0.3s ease;
+}
+
+.switch-btn::after {
+    content: "";
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    background: #2F4F7F;
+    border-radius: 50px;
+    top: 0;
+    left: 0;
+    display: block;
+    right: unset;
+    transition: all 0.3s ease;
+    box-shadow: 0px 0px 5px #0000004C;
+}
+
+.switch-btn.active {
+    background: #7A288A; 
+}
+
+.switch-btn.active::after {
+    right: 0;
+    left: unset;
+    background: #3B3F54; 
+}
+
+/* Estilos do corpo da página em modo noturno */
+
+body.ravens-night {
+    background: #2C2E2F; 
+    color: #C51077; 
+}
+
+body.ravens-night h1 {
+    color: #7A288A; 
+}
+
+body.ravens-night h2 {
+    color: #10121a; 
+}
